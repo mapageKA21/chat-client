@@ -1,0 +1,43 @@
+body {
+  background-color: #333;
+  color: white;
+}
+
+#main {
+  background-color: #00FF00;
+  height: 450px;
+  overflow-y:auto;
+  width: 700px; 
+}
+
+.message {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  color: blue;
+  font-family: Verdana;
+  font-size: 12px; 
+  height: 44px; 
+  margin-left: 5px;
+  padding-left: 4px;
+  padding-top: 2px;
+  width: 570px;
+}
+
+#autor {
+  background-color: #00FF00;
+  color: #333;
+  font-family: Verdana;
+  font-size: 0.75em;
+  padding-left: 10px;
+  width: 690px;
+}
+
+#freedom {
+  font-family: Verdana;
+  font-size: 0,5em;	
+}
+
+input {
+  width: 300px;
+}
