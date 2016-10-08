@@ -1,5 +1,7 @@
 'use strict';
 
+var lastMsgTime;
+
 function appendMsgsToHtml (msgsArr) {
   if (msgsArr.length) {
     lastMsgTime = msgsArr[0].timestamp;
