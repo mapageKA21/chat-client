@@ -18,11 +18,6 @@ function appendMsgsToHtml (msgsArr) {
 
 $(function() {
   
-  // Signal websockets connection
-  dpd.socketReady(function () {
-    console.log('the websockets connection is ready');
-  });
-
   // Initially fill UI.
   $.get('/messages?{"$limit":7,"$sort":{"timestamp":-1}}', appendMsgsToHtml);
 
@@ -38,10 +33,8 @@ $(function() {
     $('input').val('');
     $.ajax({
       method: 'POST',
-      url: 'http://localhost:2403/messages/',
-      data: {
-        contingut: nouMissatge
-      }
+      url: '/messages',
+      data: {contingut: nouMissatge}
     });
   });
 
